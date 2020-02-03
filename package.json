@@ -1,5 +1,5 @@
 {
-  "name": "@travelport-czech/ss-translations",
+  "name": "@travelport-czech/ss-translations-tools",
   "version": "1.0.2",
   "description": "Export and import tools for ss-translations",
   "author": "Michal Bureš",
@@ -77,12 +77,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Travelport-Czech/ss-translations.git"
+    "url": "git+https://github.com/Travelport-Czech/ss-translations-tools.git"
   },
   "bugs": {
-    "url": "https://github.com/Travelport-Czech/ss-translations/issues"
+    "url": "https://github.com/Travelport-Czech/ss-translations-tools/issues"
   },
-  "homepage": "https://github.com/Travelport-Czech/ss-translations#readme",
+  "homepage": "https://github.com/Travelport-Czech/ss-translations-tools#readme",
   "devDependencies": {
     "@types/jest": "^24.9.0",
     "@types/node": "^13.1.8",
