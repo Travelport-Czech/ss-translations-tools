@@ -14,16 +14,22 @@ export const translateImport = (fileName: string, translationFilePaths: { [key: 
   const worksheet = workbook.Sheets[firstSheetName]
 
   const data = xlsx.utils.sheet_to_json(worksheet)
+  let result = {}
+  for (let [lang, value] of Object.entries(fileStrings)) {
+    result[lang] = value
+  }
   data.map((item): void => {
     // @ts-ignore
     const regexp = new RegExp('(.*' + item.key + ")(: [`'])(.*)([`'],?)")
     for (let [lang, value] of Object.entries(fileStrings)) {
       // @ts-ignore
-      const newFile = value.replace(regexp, '$1$2' + item[lang] + '$4')
-      const filePath = translationFilePaths[lang]
-      fs.writeFileSync(filePath, newFile)
+      result[lang] = value.replace(regexp, '$1$2' + item[lang] + '$4')
     }
   })
+
+  for (let [lang, filePath] of Object.entries(translationFilePaths)) {
+    fs.writeFileSync(filePath as string, result[lang])
+  }
 
   console.log('Import done.')
 }
