@@ -25,7 +25,7 @@ describe('import test', () => {
 import { TranslationKeys } from './TranslationKeys'
 
 export const enTranslation: TranslationKeys = {
-  Cat: 'cat',
+  Cat: 'cat new',
   Dog: 'dog new {?} {?}'
 }
 `)
