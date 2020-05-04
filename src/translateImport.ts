@@ -20,7 +20,7 @@ export const translateImport = (fileName: string, translationFilePaths: { [key: 
   }
   data.map((item): void => {
     // @ts-ignore
-    const regexp = new RegExp('(.*' + item.key + ".*)(: [`'])(.*)([`'],?)")
+    const regexp = new RegExp('(' + item.key + ")(: [`'])(.*)([`'],?)")
     for (let [lang] of Object.entries(fileStrings)) {
       // @ts-ignore
       result[lang] = result[lang].replace(regexp, '$1$2' + item[lang] + '$4')
