@@ -72,9 +72,6 @@
     "preset": "ts-jest",
     "testEnvironment": "node"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Travelport-Czech/ss-translations-tools.git"

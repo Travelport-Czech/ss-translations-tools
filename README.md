@@ -3,8 +3,6 @@ Export and import tools for [ss-translations](https://github.com/Travelport-Czec
 
 ## Install
 
-Use GitHub registry - [details](https://help.github.com/en/github/managing-packages-with-github-packages/configuring-npm-for-use-with-github-packages#installing-a-package)
-
 ```
 > npm install @travelport-czech/ss-translations-tools
 ```
@@ -13,9 +11,6 @@ Use GitHub registry - [details](https://help.github.com/en/github/managing-packa
 example in `/tests/translateExport.test.ts` and `/tests/translateImport.test.ts` 
 
 ## Prepare development environment
-
-Authenticating to GitHub Packages
-see [there](https://help.github.com/en/github/managing-packages-with-github-packages/configuring-npm-for-use-with-github-packages#authenticating-to-github-packages)
 
 Clone project
 ```bash
@@ -39,3 +34,10 @@ If the string "BREAKING CHANGE" is found anywhere in any of the commit messages 
 * If a commit message begins with the string "feat" then the minor version will be increased. This works for most common commit metadata for feature additions: "feat: new API" and "feature: new API".
 * All other changes will increment the patch version.
 
+## Publish
+
+Login to NPM and run:
+
+```
+npm publish --access public
+```
