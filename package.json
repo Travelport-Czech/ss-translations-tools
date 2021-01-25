@@ -1,6 +1,6 @@
 {
   "name": "@travelport-czech/ss-translations-tools",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Export and import tools for ss-translations",
   "author": "Michal Bureš",
   "license": "MIT",
