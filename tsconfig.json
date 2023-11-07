@@ -15,7 +15,6 @@
     "noUnusedLocals": true,
     "removeComments": true,
     "noImplicitReturns": true,
-    "suppressImplicitAnyIndexErrors": true,
     "forceConsistentCasingInFileNames": true,
     "outDir": "dist"
   },

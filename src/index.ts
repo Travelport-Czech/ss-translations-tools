@@ -1,2 +1,2 @@
-export * from './translateExport'
-export * from './translateImport'
+export * from './translateExport';
+export * from './translateImport';
