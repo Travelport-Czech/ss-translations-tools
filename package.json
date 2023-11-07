@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/Travelport-Czech/ss-translations-tools#readme",
   "dependencies": {
-    "xlsx": "0.18.5"
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.0/xlsx-0.20.0.tgz"
   },
   "devDependencies": {
     "@types/jest": "29.5.7",
