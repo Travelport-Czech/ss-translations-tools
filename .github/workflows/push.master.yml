@@ -25,7 +25,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-          registry-url: https://npm.pkg.github.com
+          registry-url: https://registry.npmjs.org
       - name: "Automated Version Bump"
         uses: "phips28/gh-action-bump-version@master"
         env:
@@ -35,7 +35,3 @@ jobs:
         run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-      - name: Publish to GitHub registry
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
